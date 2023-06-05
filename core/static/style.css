@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Monomaniac+One&family=Tsukimi+Rounded:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+p {
+  font-family: "Tsukimi Rounded", sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.container {
+  width: 1140px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.j-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 8%, #fffb7d 99%);
+  width: 100%;
+  height: 70px;
+}
+.logo {
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 34px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+.menu {
+  gap: 20px;
+}
+.menu li a {
+  text-shadow: none;
+  font-family: "Monomaniac One", sans-serif;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.menu li a:hover {
+  text-shadow: 2px 2px 4px #000;
+}
+:root {
+  --cards-per-row: 3;
+  --cards-gap: 20px;
+}
+.blog_cards {
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  gap: var(--cards-gap);
+}
+.blog_card {
+  width: calc(
+    100% / var(--cards-per-row) -
+      (var(--cards-gap) - var(--cards-gap) / var(--cards-per-row))
+  );
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid #85ffb8;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+.blog_card h3 {
+  font-family: "Monomaniac One", sans-serif;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #f7f03e;
+}
+.operations {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.operations i {
+  font-size: 20px;
+}
+.update {
+  margin-right: 8px;
+  color: rgb(2, 177, 2);
+}
+.delete {
+  color: rgb(148, 4, 4);
+}
+.update,
+.delete {
+  text-shadow: none;
+  transition: 0.3s;
+}
+.update:hover,
+.delete:hover {
+  text-shadow: 2px 2px 4px #000;
+  color: #fff;
+}
+.author {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.author i {
+  color: #85ffbd;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.details {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  text-align: center;
+}
+.details .author i {
+  font-size: 36px;
+}
+.time_div {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.time_div i {
+  font-size: 36px;
+  color: #85ffbd;
+  margin-right: 12px;
+}
+.title {
+  font-family: "Cherry Bomb One", cursive;
+  margin: 20px 0;
+  color: #85ffbd;
+  text-shadow: 2px 2px 4px #000;
+}
+.time {
+  font-family: "Tsukimi Rounded", sans-serif;
+}
+form {
+  margin: 20px 0;
+  text-align: center;
+}
+label {
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-weight: 600;
+}
+form fieldset {
+  border: 2px solid #85ffbd;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+form legend {
+  text-align: left;
+  font-family: "Cherry Bomb One", cursive;
+  color: #f7f03e;
+  font-size: 25px;
+}
+.create input {
+  font-family: "Tsukimi Rounded", sans-serif;
+  width: 350px;
+  height: 40px;
+  padding: 5px 10px;
+  border: 1px solid #85ffbd;
+  border-radius: 20px;
+  outline: none;
+}
+.create textarea {
+  font-family: "Tsukimi Rounded", sans-serif;
+  width: 90%;
+  height: 150px;
+  padding: 5px 10px;
+  border: 1px solid #85ffbd;
+  border-radius: 20px;
+  outline: none;
+}
+.save {
+  width: max-content;
+  margin-top: 12px;
+  padding: 5px 10px;
+  background-color: #1efd7b;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Tsukimi Rounded", sans-serif;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+footer {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 8%, #fffb7d 99%);
+  width: 100%;
+  height: 200px;
+}
+footer .logo {
+  font-size: 60px;
+}
+footer .menu li a{
+    font-size: 22px;
+} 
+.icon {
+  gap: 12px;
+}
+.icon i {
+  font-size: 34px;
+  color: #85ffbd;
+  text-shadow: 2px 2px 4px #000;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block 'body' %}
+<div class="container">
+  <form class="create" method="POST">
+    {% csrf_token %}
+    <fieldset>
+      <legend>Create Blog</legend>
+      {{form}}
+      <button type="submit" class="save">Create</button>
+    </fieldset>
+  </form>
+</div>
+{% endblock %}

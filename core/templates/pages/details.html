@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block 'body' %}
+<div class="container">
+  <div class="details">
+    <h1 class="title">{{blog.title}}</h1>
+    <p>{{blog.content}}</p>
+    <div class="time_div j-flex">
+      <i class="fa-regular fa-pen-to-square"></i>
+      <ul class="time">
+        <li>{{blog.created_at}}</li>
+        <li>{{blog.updated_at}}</li>
+      </ul>
+    </div>
+
+    <div class="author j-flex">
+      <i class="fa-regular fa-user"></i>
+      <p>{{blog.author_name}}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

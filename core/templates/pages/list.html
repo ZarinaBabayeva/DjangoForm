@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block 'body' %}
+<div class="container">
+  <div class="blog_cards j-flex">
+    {% for blog in blogs %}
+    <div class="blog_card">
+      <h3><a href="{% url 'details' blog.id %}">{{blog.title}}</a></h3>
+      <p>{{blog.content}}</p>
+      <div class="operations">
+        <a href="{% url 'update' blog.id %}"
+          ><i class="fa-regular fa-pen-to-square update"></i
+        ></a>
+        <a href="{% url 'delete' blog.id %}"
+          ><i class="fa-regular fa-trash-can delete"></i
+        ></a>
+      </div>
+      <div class="author j-flex">
+        <i class="fa-regular fa-user"></i>
+        <p>{{blog.author_name}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
